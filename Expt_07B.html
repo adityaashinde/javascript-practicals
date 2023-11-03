@@ -1,0 +1,36 @@
+// Experiment 7B: Program to Add Element in Array using Splice Method
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Adding object in array</title>
+	<style>
+		body {
+			text-align: center;
+		}
+	</style>
+</head>
+
+<body>
+	<h1 style="color: green">Experiment 7b</h1>
+	<h3>Program to Add Element in Array using Splice Method </h3>
+
+	<p>Click the button to add new elements to the array.</p>
+
+	<button onclick="spliceFunction()">Add Elements</button>
+
+	<p id="event_tag"></p>
+
+	<script>
+		var list = ["HTML", "CSS", "JavaScript"];
+		document.getElementById("event_tag").innerHTML = list;
+
+		function spliceFunction() {
+			list.splice(2, 0, "Angular", "SQL",);
+			document.getElementById("event_tag").innerHTML = list;
+		}
+	</script>
+
+</body>
+
+</html>
